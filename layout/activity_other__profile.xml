@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Other_Profile">
+    android:background="@android:color/white"
+    />
+
+    <ImageView
+        android:id="@+id/personal_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/personal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"    />
+
+    <TextView
+        android:id="@+id/name_text2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:layout_below="@id/personal_icon"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/surname_text2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="surname"
+        android:layout_below="@id/name_text2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/username_uneditable2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:layout_below="@id/surname_text2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/follow_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/username_uneditable2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/LoginButton"
+        android:onClick="followMethod"
+        android:text="Follow"
+        android:textAllCaps="false"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/past_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/follow_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Past Actions"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list_actions"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@+id/past_action_text"
+        android:layout_marginTop="20dp"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        />
+
+
+</RelativeLayout>

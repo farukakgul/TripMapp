@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_Account"
+    android:background="@android:color/white"
+
+    >
+
+
+        <ImageView
+            android:id="@+id/logo_image"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="97dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/tripmap" />
+
+        <TextView
+            android:id="@+id/tripmapp_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-3dp"
+            android:text="@string/tripmapp_name2"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enter_name_text"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:layout_below="@id/tripmapp_name2"
+            android:layout_marginTop="50sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/enter_surname_text"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your surname"
+            android:layout_below="@id/enter_name_text"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <EditText
+            android:id="@+id/username_text"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:layout_below="@id/enter_surname_text"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_below="@id/username_text"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            />
+
+       <!-- <EditText
+            android:id="@+id/password_again_text"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Password ( Again )"
+            android:layout_below="@id/password_text"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            />-->
+<!--
+    <ScrollView
+        android:id="@+id/scroll_bar"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@id/password_again_text"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scrollbar_text1"
+                android:textSize="17sp"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scrollbar_text2"
+                android:textSize="17sp"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scrollbar_text3"
+                android:textSize="17sp"
+                android:textIsSelectable="true"/>
+        </LinearLayout>
+
+    </ScrollView>-->
+
+
+
+
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:background="@color/LoginButton"
+            android:text="Create"
+            android:textSize="23sp"
+            android:layout_alignEnd="@id/password_text"
+            android:layout_marginTop="70sp"
+            android:textAllCaps="false"
+            android:layout_below="@id/password_text"
+            />
+
+
+
+</RelativeLayout>

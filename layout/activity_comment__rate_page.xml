@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comment_Rate_page">
+    android:background="@android:color/white"
+    />
+
+    <ImageView
+        android:id="@+id/comments_page_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/forum2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/city_ankara"
+        android:src="@drawable/ankara_map"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/title_commented_users4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comments_page_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Comments Reviews"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <ListView
+        android:id="@+id/comment_users_list_at_comment_page"
+        android:layout_width="350dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="300dp"
+        android:layout_below="@+id/title_commented_users4"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/comment_users_list_at_comment_page"
+        android:id="@+id/add_comment_rate_button_at_comment_page"
+        android:background="@color/LoginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Add Comment Rate"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

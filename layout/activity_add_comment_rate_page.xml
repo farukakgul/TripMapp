@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_comment_rate_page">
+    android:background="@android:color/white"
+    />
+
+    <ImageView
+        android:id="@+id/add_comments_page_icon"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:src="@drawable/like"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/Title_add_rate2"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add_comments_page_icon"
+        android:background="@color/LoginButton"
+        android:layout_marginTop="40dp"
+        android:text="ADD COMMENT RATE"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/text_area_comment"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Title_add_rate2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:background="#9999"
+        android:hint=" Write your comment here...\n\n After adding your comment, choose your rate..."
+        android:textAlignment="textStart"
+        />
+
+    <ImageButton
+        android:id="@+id/rate1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/text_area_comment"
+        android:layout_marginLeft="60dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon1" />
+
+    <ImageButton
+        android:id="@+id/rate2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/text_area_comment"
+        android:layout_marginLeft="120dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon2" />
+
+    <ImageButton
+        android:id="@+id/rate3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/text_area_comment"
+        android:layout_marginLeft="180dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon3" />
+
+    <ImageButton
+        android:id="@+id/rate4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/text_area_comment"
+        android:layout_marginLeft="240dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon4" />
+
+    <ImageButton
+        android:id="@+id/rate5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/text_area_comment"
+        android:layout_marginLeft="300dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon5" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".restaurants_page"
+    android:background="@android:color/white"
+    >
+    <ImageView
+        android:id="@+id/restaurant_page_icon"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/restaurant_icon"
+        android:layout_marginTop="60dp"
+        />
+
+
+    <TextView
+        android:id="@+id/restaurant_bar"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text=" RESTAURANTS"
+        android:layout_below="@id/restaurant_page_icon"
+        android:background="@color/LoginButton"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        />
+
+    <ListView
+        android:id="@+id/list_all_Restaurants"
+        android:layout_width="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="320dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/restaurant_bar"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        />
+
+
+</RelativeLayout>

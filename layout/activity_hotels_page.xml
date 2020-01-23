@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hotels_page"
+    android:background="@android:color/white"
+    >
+    <ImageView
+        android:id="@+id/hotel_page_icon"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hotel_icon"
+        android:layout_marginTop="80dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/list_of_hotels"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text=" HOTELS"
+        android:layout_below="@id/hotel_page_icon"
+        android:background="@color/LoginButton"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        />
+
+    <ListView
+        android:id="@+id/list_all_Hotels"
+        android:layout_width="300dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="300dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/list_of_hotels"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        />
+    <!--<Button
+        android:id="@+id/add_hotel"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@color/LoginButton"
+        android:layout_below="@id/list_all_Users"
+        android:layout_centerHorizontal="true"
+        android:text ="Add Hotel"
+    />-->
+
+</RelativeLayout>

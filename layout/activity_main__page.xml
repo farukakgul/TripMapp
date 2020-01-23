@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Page"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:id="@+id/map_image"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/turkey_map" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_below="@id/map_image"
+        android:layout_marginTop="-40dp"
+        android:background="@color/LoginButton"
+        />
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+    />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/search_view"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        />
+
+    <ImageView
+        android:id="@+id/social"
+        android:layout_marginLeft="50sp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/listView"
+        android:src="@drawable/social2"
+        />
+    <ImageView
+        android:id="@+id/personal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/personal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/listView"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/explore_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/social"
+        android:layout_marginLeft="50sp"
+        android:background="@color/LoginButton"
+        android:text="Explore"
+
+        />
+    <Button
+        android:id="@+id/my_profile_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/social"
+        android:background="@color/LoginButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:text="Settings"
+        />
+
+</RelativeLayout>

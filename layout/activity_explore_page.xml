@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Explore_page">
+    android:background="@android:color/white"
+    />
+
+    <ImageView
+        android:id="@+id/social_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/social2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"    />
+
+    <TextView
+        android:id="@+id/followed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/social_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-3dp"
+        android:text="Followed Users"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listOfUsers"
+        android:layout_width="300dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/followed_text"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        />
+
+</RelativeLayout>
